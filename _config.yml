@@ -45,22 +45,35 @@ cache:
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine them on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
+  small: /images/favicon_package_v0.16/favicon-16x16.png #/images/favicon-16x16-next.png
+  medium: /images/favicon_package_v0.16/favicon-32x32.png #/images/favicon-32x32-next.png
+  apple_touch_icon: /images/favicon_package_v0.16/apple-touch-icon.png #/images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/favicon_package_v0.16/safari-pinned-tab.svg #/images/logo.svg
+  android_manifest: /images/favicon_package_v0.16/site.webmanifest #/images/manifest.json
+  ms_browserconfig: /images/favicon_package_v0.16/browserconfig.xml #/images/browserconfig.xml
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
 rss:
 
+# hexo-generator-feed
+# https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub: https://jun-wang-2018.github.io/
+  content:
+  content_limit: 140
+  #content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png #/images/favicon_package_v0.16/favicon-16x16.png
+
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2019
 
   # Icon between year and copyright info.
   icon:
@@ -618,10 +631,10 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters
-#google_site_verification:
+google_site_verification: 9jYGOiink-CQ47r4O1xDAuaOxSbPBmxJJSZnPpiYZfk
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-101741233-4
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster
