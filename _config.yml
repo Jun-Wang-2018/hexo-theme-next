@@ -550,8 +550,8 @@ changyan:
 # More info available at https://valine.js.org
 valine:
   enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appid:  EmgMWebFBWLliWI2aMwDpwPC-gzGzoHsz # your leancloud application appid
+  appkey:  0CCDSc6rutpC3p5kiIEAM4tK # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -586,12 +586,13 @@ gitment:
 # Reference: https://asdfv1929.github.io/2018/01/20/gitalk/, https://liujunzhou.top/2018/8/10/gitalk-error/
 gitalk:
   enable: false
-  github_id:  # Github repo owner
-  repo:  # Repository name to store issues.
-  client_id:  # Github Application Client ID
-  client_secret:  # Github Application Client Secret
-  admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+  github_id:  Jun-Wang-2018 # Github repo owner
+  repo:  MyBlog # Repository name to store issues.
+  client_id:  ccf24a0aba2a5395ca6d # Github Application Client ID
+  client_secret:  83781b4bb109295dee308ddc283f23b8787ad262 # Github Application Client Secret
+  admin_user:  Jun-Wang-2018 # GitHub repo owner and collaborators, only these guys can initialize github issues
   distraction_free_mode: true # Facebook-like distraction free mode
+  language : navigator.language || navigator.userLanguage # en, zh-CN and zh-TW are currently available.
 
 # Baidu Share
 # Available values: button | slide
@@ -615,14 +616,14 @@ gitalk:
 needmoreshare2:
   enable: false
   postbottom:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
-      position: bottomCenter
+      position: middleCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
@@ -695,9 +696,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id:  #<app_id>
-  app_key:  #<app_key>
+  enable: true
+  app_id: EmgMWebFBWLliWI2aMwDpwPC-gzGzoHsz #<app_id>
+  app_key: 0CCDSc6rutpC3p5kiIEAM4tK #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
@@ -708,7 +709,7 @@ leancloud_visitors:
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
 # Visit https://firebase.google.com/docs/firestore/ to get more information about firestore.
 firestore:
-  enable: true
+  enable: false
   collection: articles #required, a string collection name to access firestore database
   apiKey: "AIzaSyB4mSD7lL0xhM4k-bPGdXyH0dCJSK7MkJE" #required
   projectId: "myblog-0220" #required
@@ -778,7 +779,7 @@ local_search:
 # Bookmark Support
 # Dependencies: https://github.com/theme-next/theme-next-bookmark
 bookmark:
-  enable: false
+  enable: true
   # if auto
   #  - save the reading position when closing the page
   #  - or clicking the bookmark-icon
