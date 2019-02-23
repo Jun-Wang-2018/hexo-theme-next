@@ -272,7 +272,7 @@ sidebar:
   # Scroll percent label in b2t button.
   scrollpercent: true
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -386,7 +386,7 @@ android_chrome_color: "#222"
 #   enabled: If true, will enable custom logo
 #   image: Images's url, replace it with specific image
 custom_logo:
-  enabled: false
+  enabled:
   image:
 
 # Code Highlight theme
@@ -411,7 +411,7 @@ cheers_enabled: true
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -424,14 +424,14 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
+    family: #Monda #Lato
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: #Roboto Slab
     size:
 
   # Font settings for posts.
@@ -444,13 +444,13 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
-    size:
+    family: Chalkduster # Freestyle Script, palace script mt, Lobster Two
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: #PT Mono
     size:
 
 
@@ -598,11 +598,11 @@ gitalk:
 # Available values: button | slide
 # Warning: Baidu Share does not support https.
 #baidushare:
-##  type: button
+#  type: slide
 
 # AddThis Share, See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools
-#add_this_id:
+add_this_id: ra-5c713fd8aed91121
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
@@ -733,7 +733,7 @@ busuanzi_count:
 #tencent_mta:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.

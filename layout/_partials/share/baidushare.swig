@@ -47,7 +47,7 @@
       "slide": {
         "bdImg": "5",
         "bdPos": "left",
-        "bdTop": "100"
+        "bdTop": "200"
       }
     }
   </script>
